@@ -32,9 +32,11 @@ window.addEventListener("click", () => {
   }
 });
 
-window.addEventListener("mouseleave", () => {
-  mouse.x = window.innerWidth / 2;
-  mouse.y = window.innerHeight / 2;
+window.addEventListener("mouseout", () => {
+  mouse = {
+    x: innerWidth / 2,
+    y: innerHeight / 2,
+  };
 });
 
 const getRandomNumber = (min, max) => {
